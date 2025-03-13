@@ -28,7 +28,7 @@ This system leverages an event-driven approach where:
   "senderMobileNumber": "0722000000",
   "narration": "Send money",
   "amount": 100,
-  "telco": "Airtel",
+  "telco": "M-PESA",
   "reciepientMobileNo": "0721000000"
 }
 ```
