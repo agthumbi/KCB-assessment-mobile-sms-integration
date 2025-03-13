@@ -30,6 +30,7 @@ public class MSMSResponseTest {
         when(mockSmsRequest.isSender()).thenReturn(true);
         when(mockSmsRequest.getMobileNumber()).thenReturn("254712345678");
         when(mockSmsRequest.getAmount()).thenReturn(100.0);
+         when(mockSmsRequest.getTelcos()).thenReturn("M-PESA");
 
 
         // Stub RandomGenerator
@@ -42,7 +43,7 @@ public class MSMSResponseTest {
 
     @Test
     void testGenerateResponseForMpesa() {
-        when(mockSmsRequest.getTelcos()).thenReturn("M-PESA");
+       
         String response = msmsResponse.generateResponse();
 
         // Assert response contains expected values
